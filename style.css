@@ -1,0 +1,137 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* border-box */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Reset margin & padding */
+body,
+span,
+br,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* IMG easier to work with */
+img {
+    display: block;
+    width: 22%;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 3.5rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h1, h2, p {
+    font-family: Poppins;
+}
+.title, h2 {
+    font-weight: 600;
+}
+.regular {
+    font-weight: 200;
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(231, 3%, 53%);
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:hsl(234, 12%, 34%);
+    margin-bottom: 3rem;;
+}
+
+h1 + h1{
+    margin-bottom: 1rem;
+}
+
+.title p {
+    max-width: 45ch;
+}
+
+.card--container {    
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 17.5rem;
+    box-shadow: hsla(234, 27%, 44%, 0.26) 0px 7px 12px 2px;
+}
+
+.card:nth-of-type(1) {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.middle .card:nth-of-type(1) {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.middle .card:nth-of-type(2) {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card:last-of-type {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+img {
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: .75rem;
+    color: hsl(229, 6%, 66%);
+}
+footer {
+    margin-top: 3rem;
+    /* position: fixed; */
+}
+
+@media (min-width: 1440px) {
+    .flex {
+        flex-direction: row;
+    }
+}
